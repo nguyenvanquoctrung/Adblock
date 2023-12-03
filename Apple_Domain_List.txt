@@ -1,4 +1,4 @@
-[AppleDomainList]
+[AdBlock]
 ! Homepage: https://github.com/nguyenvanquoctrung/Adblock/
 ! Title: ADL
 ! Expires: 1 days
