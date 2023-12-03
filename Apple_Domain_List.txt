@@ -118,3 +118,45 @@ ocsp.digicert.com
 ocsp.entrust.net
 ocsp2.apple.com
 valid.apple.com
+! ====================== Apple ID =====================
+appleid.apple.com
+appleid.cdn-apple.com
+idmsa.apple.com
+gsa.apple.com
+! ====================== iCloud =====================
+*.apple-cloudkit.com
+*.apple-livephotoskit.com
+*.apzones.com
+*.cdn-apple.com
+*.gc.apple.com
+*.icloud.com
+*.icloud.com.cn
+*.icloud.apple.com
+*.icloud-content.com
+*.iwork.apple.com
+mask.icloud.com
+mask-h2.icloud.com	
+mask-api.icloud.com
+! ====================== Siri and Search =====================
+guzzoni.apple.com
+*.smoot.apple.com
+! ====================== Associated Domains =====================
+app-site-association.cdn-apple.com
+app-site-association.networking.apple
+! ====================== Tap to Pay on iPhone =====================
+pos-device.apple.com
+humb.apple.com
+phonesubmissions.apple.com
+! ====================== Additional content =====================
+audiocontentdownload.apple.com
+devimages-cdn.apple.com
+download.developer.apple.com
+playgrounds-assets-cdn.apple.com
+playgrounds-cdn.apple.com
+sylvan.apple.com
+! ====================== Firewalls =====================
+#If your firewall supports using hostnames, you might be able to use most Apple services above by allowing outbound connections to *.apple.com. If your firewall can only be configured with IP addresses, allow outbound connections to 17.0.0.0/8. The entire 17.0.0.0/8 address block is assigned to Apple.
+! ====================== HTTP proxy =====================
+#You can use Apple services through a proxy if you disable packet inspection and authentication for traffic to and from the listed hosts. Exceptions to this are noted above. Attempts to perform content inspection on encrypted communications between Apple devices and services will result in a dropped connection to preserve platform security and user privacy.
+! ====================== Content Distribution Networks and DNS Resolution =====================
+#Some of the hosts listed in this article may have CNAME records in DNS instead of A or AAAA records. These CNAME records may refer to other CNAME records in a chain before ultimately resolving to an IP address. This DNS resolution allows Apple to provide fast and reliable content delivery to users in all regions and is transparent to devices and proxy servers. Apple doesn't publish a list of these CNAME records because they are subject to change. You shouldn't need to configure your firewall or proxy server to allow them as long as you don't block DNS lookups and allow access to the hosts and domains named above.
