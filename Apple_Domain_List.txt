@@ -1,6 +1,6 @@
-[AdBlock]
+[Apple_Domain_List]
 ! Homepage: https://github.com/nguyenvanquoctrung/Adblock/
-! Title: FADB
+! Title: ADL
 ! Expires: 1 days
 ! Version: 0.1
 ! Last modified: 18/11/2023
