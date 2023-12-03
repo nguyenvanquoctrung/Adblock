@@ -7,6 +7,7 @@
 ! Tham khao: https://support.apple.com/en-mt/HT210060
 ! ====================== Apple Push Notifications =====================
 ! ====================== Device Setup =====================
+! Apple devices need access to the following hosts during setup, or when installing, updating, or restoring the operating system.
 albert.apple.com
 captive.apple.com
 gs.apple.com
@@ -18,6 +19,7 @@ time-ios.apple.com
 time.apple.com
 time-macos.apple.com
 ! ====================== Device management =====================
+! Apple devices enrolled in MDM need access to the following hosts and domains.
 *.push.apple.com
 deviceenrollment.apple.com
 deviceservices-external.apple.com
@@ -28,6 +30,7 @@ mdmenrollment.apple.com
 setup.icloud.com
 vpp.itunes.apple.com
 ! ====================== Apple Business Manager and Apple School Manager =====================
+! Administrators and managers need access to the following hosts and domains in order to administer and manage Apple Business Manager and Apple School Manager.
 *.business.apple.com
 *.school.apple.com
 appleid.cdn-apple.com
@@ -40,8 +43,10 @@ statici.icloud.com
 *.vertexsmb.com
 www.apple.com
 upload.appleschoolcontent.com
+! Employees and students using Managed Apple IDs need access to the following host in order to look up others in their business or school when composing messages or sharing documents.
 ws-ee-maidsvc.icloud.com
 ! ====================== Apple Business Essentials device management =====================
+! Administrators and devices managed by Apple Business Essentials need access to the following hosts and domains, along with those listed above for Apple Business Manager.
 axm-adm-enroll.apple.com
 axm-adm-mdm.apple.com
 axm-adm-scep.apple.com
@@ -49,6 +54,7 @@ axm-app.apple.com
 *.apple-mapkit.com
 icons.axm-usercontent-apple.com
 ! ====================== Classroom and Schoolwork =====================
+! Student and Teacher devices using the Classroom or Schoolwork apps need access to the following hosts, as well as those listed in the Apple ID and iCloud sections below.
 s.mzstatic.com
 play.itunes.apple.com
 ws-ee-maidsvc.icloud.com
@@ -57,7 +63,9 @@ pg-bootstrap.itunes.apple.com
 cls-iosclient.itunes.apple.com
 cls-ingest.itunes.apple.com
 ! ====================== Software updates =====================
-! macOS, iOS, iPadOS, watchOS, and tvOS ###
+! Make sure you can access the following ports for updating macOS, apps from the Mac App Store, and for using content caching.
+! === macOS, iOS, iPadOS, watchOS, and tvOS ===
+! Apple devices need access to the following hosts when installing, restoring, and updating iOS, iPadOS, macOS, watchOS, and tvOS.
 appldnld.apple.com
 configuration.apple.com
 gdmf.apple.com
@@ -76,37 +84,46 @@ swscan.apple.com
 updates-http.cdn-apple.com
 updates.cdn-apple.com
 xp.apple.com
-! App Store
+! === App Store ===
+! Apple devices need access to the following hosts and domains for installing and updating apps.
 *.itunes.apple.com	
 *.apps.apple.com
 *.mzstatic.com
 itunes.apple.com
 ppq.apple.com
-! Carrier updates
+! === Carrier updates ===
+! Cellular devices need access to the following hosts to install carrier bundle updates.
 appldnld.apple.com
 appldnld.apple.com.edgesuite.net
 itunes.com
 itunes.apple.com
 updates-http.cdn-apple.com
 updates.cdn-apple.com
-! Content caching
+! === Content caching ===
+! A Mac that provides content caching needs access to the following hosts, as well as the hosts listed in this document that provide Apple content such as software updates, apps, and additional content.
 lcdn-registration.apple.com	
 suconfig.apple.com
 xp-cdn.apple.com
+! Clients of macOS content caching need access to the following hosts.
 lcdn-locator.apple.com
 serverstatus.apple.com
 ! ====================== App features =====================
+! Apple devices may need access to the following hosts to use certain app features. 
 api.apple-cloudkit.com
 *.appattest.apple.com
 ! ====================== Beta updates =====================
+! Apple devices need access to the following hosts to sign in to Beta Updates and report feedback using the Feedback Assistant app.
 bpapi.apple.com
 cssubmissions.apple.com
 fba.apple.com
 ! ====================== Apple diagnostics =====================
+! Apple devices might access the following host in order to perform diagnostics used to detect a possible hardware issue.
 diagassets.apple.com
 ! ====================== Domain Name System resolution =====================
+! Encrypted Domain Name System (DNS) resolution in iOS 14, iPadOS 14, tvOS 14, and macOS Big Sur and later uses the following host.
 doh.dns.apple.com
 ! ====================== Certificate validation =====================
+! Apple devices must be able to connect to the following hosts to validate digital certificates used by the hosts in this article.
 certs.apple.com
 crl.apple.com
 crl.entrust.net
@@ -119,11 +136,13 @@ ocsp.entrust.net
 ocsp2.apple.com
 valid.apple.com
 ! ====================== Apple ID =====================
+! Apple devices must be able to connect to the following hosts in order to authenticate an Apple ID. This is required for all services that use an Apple ID, such as iCloud, app installation, and Xcode.
 appleid.apple.com
 appleid.cdn-apple.com
 idmsa.apple.com
 gsa.apple.com
 ! ====================== iCloud =====================
+! In addition to the Apple ID hosts listed above, Apple devices must be able to connect to hosts in the following domains to use iCloud services.
 *.apple-cloudkit.com
 *.apple-livephotoskit.com
 *.apzones.com
@@ -138,16 +157,20 @@ mask.icloud.com
 mask-h2.icloud.com	
 mask-api.icloud.com
 ! ====================== Siri and Search =====================
+! Apple devices must be able to connect to the following hosts to process Siri requests, including dictation and searching in Apple apps.
 guzzoni.apple.com
 *.smoot.apple.com
 ! ====================== Associated Domains =====================
+! Apple devices must be able to connect to the following hosts to use Associated Domains in iOS 14, iPadOS 14, and macOS Big Sur and later. Associated Domains underpin universal links, a feature that allows an app to present content in place of all or part of its website. Handoff, App Clips, and single sign-on extensions all use Associated Domains.
 app-site-association.cdn-apple.com
 app-site-association.networking.apple
 ! ====================== Tap to Pay on iPhone =====================
+! To use a payment app to accept contactless payments, an iPhone must be able to reach the following hosts.
 pos-device.apple.com
 humb.apple.com
 phonesubmissions.apple.com
 ! ====================== Additional content =====================
+! Apple devices must be able to connect to the following hosts to download additional content. Some additional content might also be hosted on third-party content distribution networks.
 audiocontentdownload.apple.com
 devimages-cdn.apple.com
 download.developer.apple.com
