@@ -1,6 +1,6 @@
-[Apple List Domain]
+[Apple_Domain_List]
 ! Homepage: https://github.com/nguyenvanquoctrung/Adblock/
-! Title: ALD
+! Title: Apple Domain List
 ! Expires: 1 days
 ! Version: 0.1
 ! Last modified: 03/12/2023
