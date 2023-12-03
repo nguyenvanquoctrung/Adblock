@@ -57,7 +57,7 @@ pg-bootstrap.itunes.apple.com
 cls-iosclient.itunes.apple.com
 cls-ingest.itunes.apple.com
 ! ====================== Software updates =====================
-### macOS, iOS, iPadOS, watchOS, and tvOS ###
+! macOS, iOS, iPadOS, watchOS, and tvOS ###
 appldnld.apple.com
 configuration.apple.com
 gdmf.apple.com
@@ -76,20 +76,20 @@ swscan.apple.com
 updates-http.cdn-apple.com
 updates.cdn-apple.com
 xp.apple.com
-### App Store ###
+! App Store
 *.itunes.apple.com	
 *.apps.apple.com
 *.mzstatic.com
 itunes.apple.com
 ppq.apple.com
-### Carrier updates ###
+! Carrier updates
 appldnld.apple.com
 appldnld.apple.com.edgesuite.net
 itunes.com
 itunes.apple.com
 updates-http.cdn-apple.com
 updates.cdn-apple.com
-### Content caching ###
+! Content caching
 lcdn-registration.apple.com	
 suconfig.apple.com
 xp-cdn.apple.com
@@ -155,8 +155,8 @@ playgrounds-assets-cdn.apple.com
 playgrounds-cdn.apple.com
 sylvan.apple.com
 ! ====================== Firewalls =====================
-#If your firewall supports using hostnames, you might be able to use most Apple services above by allowing outbound connections to *.apple.com. If your firewall can only be configured with IP addresses, allow outbound connections to 17.0.0.0/8. The entire 17.0.0.0/8 address block is assigned to Apple.
+! If your firewall supports using hostnames, you might be able to use most Apple services above by allowing outbound connections to *.apple.com. If your firewall can only be configured with IP addresses, allow outbound connections to 17.0.0.0/8. The entire 17.0.0.0/8 address block is assigned to Apple.
 ! ====================== HTTP proxy =====================
-#You can use Apple services through a proxy if you disable packet inspection and authentication for traffic to and from the listed hosts. Exceptions to this are noted above. Attempts to perform content inspection on encrypted communications between Apple devices and services will result in a dropped connection to preserve platform security and user privacy.
+! You can use Apple services through a proxy if you disable packet inspection and authentication for traffic to and from the listed hosts. Exceptions to this are noted above. Attempts to perform content inspection on encrypted communications between Apple devices and services will result in a dropped connection to preserve platform security and user privacy.
 ! ====================== Content Distribution Networks and DNS Resolution =====================
-#Some of the hosts listed in this article may have CNAME records in DNS instead of A or AAAA records. These CNAME records may refer to other CNAME records in a chain before ultimately resolving to an IP address. This DNS resolution allows Apple to provide fast and reliable content delivery to users in all regions and is transparent to devices and proxy servers. Apple doesn't publish a list of these CNAME records because they are subject to change. You shouldn't need to configure your firewall or proxy server to allow them as long as you don't block DNS lookups and allow access to the hosts and domains named above.
+! Some of the hosts listed in this article may have CNAME records in DNS instead of A or AAAA records. These CNAME records may refer to other CNAME records in a chain before ultimately resolving to an IP address. This DNS resolution allows Apple to provide fast and reliable content delivery to users in all regions and is transparent to devices and proxy servers. Apple doesn't publish a list of these CNAME records because they are subject to change. You shouldn't need to configure your firewall or proxy server to allow them as long as you don't block DNS lookups and allow access to the hosts and domains named above.
