@@ -3,7 +3,7 @@
 ! Title: ADL
 ! Expires: 1 days
 ! Version: 0.1
-! Last modified: 18/11/2023
+! Last modified: 03/12/2023
 ! Tham khao: https://support.apple.com/en-mt/HT210060
 ! ====================== Apple Push Notifications =====================
 ! ====================== Device Setup =====================
